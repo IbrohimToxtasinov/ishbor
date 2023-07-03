@@ -30,8 +30,6 @@ class _TabBoxState extends State<TabBox> {
     screens = [
       HomeScreen(),
       CategoryScreen(),
-      CartScreen(),
-      FavoriteScreen(),
       ProfileScreen(),
     ];
     super.initState();
@@ -59,21 +57,15 @@ class _TabBoxState extends State<TabBox> {
               bottomNavigationBar: BottomNavigationBar(
                 type: BottomNavigationBarType.fixed,
                 currentIndex: index,
-                selectedItemColor: MyColors.c4854E7,
-                unselectedItemColor: MyColors.c9B9B9B,
-                selectedLabelStyle: MyTextStyles.poppinsBlack,
-                unselectedLabelStyle: MyTextStyles.poppinsRegular,
-                selectedFontSize: 10.sp,
-                unselectedFontSize: 10.sp,
+                selectedItemColor: Colors.yellow,
+                unselectedItemColor: Colors.red,
                 onTap: (value) {
                   context.read<TabCubit>().changeTabState(value);
                 },
                 items: [
-                  bottomNavigationBarItemWidget(icon: "home"),
-                  bottomNavigationBarItemWidget(icon: "category"),
-                  bottomNavigationBarItemWidget(icon: "cart"),
-                  bottomNavigationBarItemWidget(icon: "favorite"),
-                  bottomNavigationBarItemWidget(icon: "profile"),
+                  bottomNavigationBarItemWidget(icon: "home_icon"),
+                  bottomNavigationBarItemWidget(icon: "chat"),
+                  bottomNavigationBarItemWidget(icon: "profile_1"),
                 ],
               ),
             );

@@ -12,9 +12,13 @@ class AppImages {
   static const iconProfile = 'assets/svg/profile.svg';
   static const iconSelectProfile = 'assets/svg/select_profile.svg';
   static const iconArrowLeftBack = 'assets/svg/arrow_left_back.svg';
+  static const home = 'assets/svg/home_icon.svg';
+  static const chat = 'assets/svg/chat.svg';
+  static const profile = 'assets/svg/profile_1.svg';
 
   // PNG
   static const noInternet = 'assets/images/no_internet.png';
+  static const appLogo = 'assets/images/app_logo.png';
 
   // LOTTIE
   static const locationLoading = 'assets/loties/location_loading.json';
