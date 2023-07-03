@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ishbor/utils/app_colors.dart';
 import 'package:ishbor/utils/app_text_styles.dart';
 import 'package:ishbor/utils/constans.dart';
@@ -39,18 +40,12 @@ class _SplashScreenState extends State<SplashScreen> {
               Text(
                 "Logo",
                 textAlign: TextAlign.center,
-                style: MyTextStyles.poppinsBlack.copyWith(
-                  fontSize: 60.sp,
-                  color: MyColors.c222222,
-                ),
+                style: GoogleFonts.aBeeZee()
               ),
               Text(
                 "ishbor.uz",
                 textAlign: TextAlign.center,
-                style: MyTextStyles.poppinsBlack.copyWith(
-                  fontSize: 30.sp,
-                  color: MyColors.c222222,
-                ),
+                style: GoogleFonts.aBeeZee()
               ),
             ],
           ),

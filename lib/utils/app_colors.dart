@@ -8,6 +8,8 @@ class MyColors {
   static const Color c9B9B9B = Color(0xFF9B9B9B);
   static const Color c222222 = Color(0xFF222222);
   static const Color cF9F9F9 = Color(0xFFF9F9F9);
+  static const c3B3B3B = Color(0xff3B3B3B);
+  static const gradient1 = [Color(0xff53E88B), Color(0xff15BE77)];
 
   // Brand Color
   static const Color brandColor100 = Color(0xFFFFE9BE);
