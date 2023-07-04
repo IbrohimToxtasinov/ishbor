@@ -39,34 +39,25 @@ class _LoginScreenState extends State<LoginScreen> {
           AppImages.appLogo,
           scale: 3.0.h,
         ),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 0.0).w,
-            child: PhoneInputComponent(
-              validator: (value) =>
-                  value!.length > 16 ? null : "Telefon raqamingizni kiriting",
-              onChanged: (String value) {
-                phoneNumber = MyUtils.getPhoneNumber(value);
-              },
-              initialValue: '',
-            ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0.0).w,
+          child: PhoneInputComponent(
+            validator: (value) =>
+                value!.length > 16 ? null : "Telefon raqamingizni kiriting",
+            onChanged: (String value) {
+              phoneNumber = MyUtils.getPhoneNumber(value);
+            },
+            initialValue: '',
           ),
         ),
         SizedBox(height: 12.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0).w,
-            child: AuthTexFormFiledWidget(
-              controller: passwordController,
-              textInputAction: TextInputAction.done,
-              hintText: 'Parol',
-              validator: (password) {
-                return password!.length >= 5 ? null : "Parolingizni kiriting";
-              },
-            ),
-          ),
+        AuthTexFormFiledWidget(
+          controller: passwordController,
+          textInputAction: TextInputAction.done,
+          hintText: 'Parol',
+          validator: (password) {
+            return password!.length >= 5 ? null : "Parolingizni kiriting";
+          },
         ),
         const Expanded(child: SizedBox()),
         SizedBox(

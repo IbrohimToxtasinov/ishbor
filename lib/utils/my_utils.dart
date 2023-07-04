@@ -16,9 +16,8 @@ class MyUtils {
   ];
   static  List<Widget> views = [
     const LoginScreen(),
-    const SignUpScreen()
+    const SignUpScreen(),
   ];
-  static List<Widget> views = [const LoginScreen(), const SignUpScreen()];
 
   static String getPhoneNumber(String number) {
     return number.replaceAll(RegExp(r"\s|-|[()]+"), "");

@@ -41,83 +41,53 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Column(
       children: [
         SizedBox(height: 22.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0).w,
-            child: AuthTexFormFiledWidget(
-              controller: fullNameController,
-              textInputAction: TextInputAction.next,
-              hintText: 'Ism / Familiya',
-              validator: (fullname) {
-                return fullname!.length >= 3 ? null : "Isim Xato";
-              },
-            ),
-          ),
+        AuthTexFormFiledWidget(
+          controller: fullNameController,
+          textInputAction: TextInputAction.next,
+          hintText: 'Ism / Familiya',
+          validator: (fullname) {
+            return fullname!.length >= 3 ? null : "Isim Xato";
+          },
         ),
         SizedBox(height: 12.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 0.0).w,
-            child: PhoneInputComponent(
-              validator: (value) =>
-              value!.length > 16 ? null : "Telefon raqamingizni kiriting",
-              onChanged: (String value) {
-                phoneNumber = MyUtils.getPhoneNumber(value);
-              },
-              initialValue: '',
-            ),
-          ),
+        PhoneInputComponent(
+          validator: (value) =>
+          value!.length > 16 ? null : "Telefon raqamingizni kiriting",
+          onChanged: (String value) {
+            phoneNumber = MyUtils.getPhoneNumber(value);
+          },
+          initialValue: '',
         ),
         SizedBox(height: 12.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0).w,
-            child: AuthTexFormFiledWidget(
-              controller: cityController,
-              textInputAction: TextInputAction.next,
-              hintText: 'Shahar',
-              validator: (city) {
-                return city!.length >= 3 ? null : "Shahar Xato";
-              },
-            ),
-          ),
+        AuthTexFormFiledWidget(
+          controller: cityController,
+          textInputAction: TextInputAction.next,
+          hintText: 'Shahar',
+          validator: (city) {
+            return city!.length >= 3 ? null : "Shahar Xato";
+          },
         ),
         SizedBox(height: 12.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0).w,
-            child: AuthTexFormFiledWidget(
-              controller: passwordController,
-              textInputAction: TextInputAction.next,
-              hintText: 'Parol',
-              validator: (password) {
-                return password!.length >= 5 ? null : "Parolingizni kiriting";
-              },
-            ),
-          ),
+        AuthTexFormFiledWidget(
+          controller: passwordController,
+          textInputAction: TextInputAction.next,
+          hintText: 'Parol',
+          validator: (password) {
+            return password!.length >= 5 ? null : "Parolingizni kiriting";
+          },
         ),
         SizedBox(height: 12.h),
-        SizedBox(
-          height: 50.h,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 0.0).w,
-            child: AuthTexFormFiledWidget(
-              controller: vController,
-              textInputAction: TextInputAction.done,
-              hintText: 'ishchi / ish beruvchi',
-              validator: (v) {
-                return v!.length >= 3 ? null : "Ma'lumot Xato";
-              },
-            ),
-          ),
+        AuthTexFormFiledWidget(
+          controller: vController,
+          textInputAction: TextInputAction.done,
+          hintText: 'ishchi / ish beruvchi',
+          validator: (v) {
+            return v!.length >= 3 ? null : "Ma'lumot Xato";
+          },
         ),
         const Expanded(child: SizedBox()),
         SizedBox(
-          width: 140.w,
+          width: 200.w,
           child: GlobalButton(
             title: 'Akkaunt ochish',
             onTap: () {},
