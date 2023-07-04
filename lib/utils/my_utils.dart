@@ -3,25 +3,41 @@ import 'package:ishbor/ui/auth/login/login_screen.dart';
 import 'package:ishbor/ui/auth/sign_up/sign_up_screen.dart';
 import 'package:ishbor/utils/app_image.dart';
 
-import '../ui/tab_box/home/home_screen.dart';
 
 class MyUtils {
   static const List<Tab> tabs = [
     Tab(
-      child: Text('AKK GA KIRISH',
-      style: TextStyle(
-        color: Colors.purpleAccent
-      ),),
+      child: Text(
+        'AKK GA KIRISH',
+        style: TextStyle(color: Colors.purpleAccent),
+      ),
     ),
-    Tab(text: 'REGISTRATSIYA ',),
+    Tab(
+      text: 'REGISTRATSIYA ',
+    ),
   ];
-  static  List<Widget> views = [
-    const LoginScreen(),
-    const SignUpScreen()
-  ];
+  static List<Widget> views = [const LoginScreen(), const SignUpScreen()];
 
   static String getPhoneNumber(String number) {
     return number.replaceAll(RegExp(r"\s|-|[()]+"), "");
   }
+}
 
+class FakeData {
+  String name;
+  String image;
+  Color color;
+
+  FakeData({
+    required this.color,
+    required this.name,
+    required this.image,
+  });
+
+  static  List<FakeData> data = [
+    FakeData(color: const Color(0xffEADAF1), name: 'ISH SERVISLARI', image: AppImages.hamkor),
+    FakeData(color: const Color(0xffC1CDE8), name: 'IMKONIYATI CHEKLANGANLAR', image: AppImages.hamkor),
+    FakeData(color: const Color(0xffC1CDE8), name: 'AI YORDAMCHI', image: AppImages.hamkor),
+    FakeData(color: const Color(0xffEADAF1), name: 'HAMKORLAR', image: AppImages.hamkor),
+  ];
 }
