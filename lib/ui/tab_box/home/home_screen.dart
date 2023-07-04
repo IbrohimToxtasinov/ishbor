@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Image.asset(AppImages.im),
               Padding(
-                padding: EdgeInsets.only(left: 22.r, right: 22.r, top: 32.r),
+                padding: EdgeInsets.only(left: 32.r, right: 32.r, top: 32.r),
                 child: SizedBox(
                   width: double.infinity,
                   height: 320.h,
@@ -67,6 +67,7 @@ class HomeScreen extends StatelessWidget {
                               fontWeight: FontWeight.w700,
                               color: const Color(0xffB3B2B4),
                             ),
+                            textAlign:TextAlign.center,
                           )
                         ],
                       );

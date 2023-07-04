@@ -1,5 +1,4 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ishbor/utils/app_image.dart';
@@ -40,7 +39,7 @@ class NoInternetScreen extends StatelessWidget {
                 height: 50,
               ),
               Text(
-                "Internetingizni yoqing!".tr(),
+                "Internetingizni yoqing!",
                 style: Theme.of(context).textTheme.headlineSmall
               ),
             ],
