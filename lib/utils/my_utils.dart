@@ -18,7 +18,6 @@ class MyUtils {
     const LoginScreen(),
     const SignUpScreen()
   ];
-  static List<Widget> views = [const LoginScreen(), const SignUpScreen()];
 
   static String getPhoneNumber(String number) {
     return number.replaceAll(RegExp(r"\s|-|[()]+"), "");
@@ -37,9 +36,9 @@ class FakeData {
   });
 
   static  List<FakeData> data = [
-    FakeData(color: const Color(0xffEADAF1), name: 'ISH SERVISLARI', image: AppImages.hamkor),
-    FakeData(color: const Color(0xffC1CDE8), name: 'IMKONIYATI CHEKLANGANLAR', image: AppImages.hamkor),
-    FakeData(color: const Color(0xffC1CDE8), name: 'AI YORDAMCHI', image: AppImages.hamkor),
+    FakeData(color: const Color(0xffEADAF1), name: 'ISH SERVISLARI', image: AppImages.onBoarding1),
+    FakeData(color: const Color(0xffC1CDE8), name: 'IMKONIYATI CHEKLANGANLAR', image: AppImages.onBoarding2),
+    FakeData(color: const Color(0xffC1CDE8), name: 'AI YORDAMCHI', image: AppImages.onBoarding4),
     FakeData(color: const Color(0xffEADAF1), name: 'HAMKORLAR', image: AppImages.hamkor),
   ];
 }
