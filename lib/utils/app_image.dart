@@ -20,11 +20,15 @@ class AppImages {
   // PNG
   static const noInternet = 'assets/images/no_internet.png';
   static const appLogo = 'assets/images/app_logo.png';
+  static const onBoarding1 = 'assets/images/on_boarding1.png';
+  static const onBoarding2 = 'assets/images/on_boarding2.png';
+  static const onBoarding3 = 'assets/images/on_boarding3.png';
+  static const onBoarding4 = 'assets/images/on_boarding4.png';
+  static const onBoarding5 = 'assets/images/on_boarding5.png';
   static const img = 'assets/images/img_1.png';
   static const img2 = 'assets/images/img_2.png';
   static const im = 'assets/images/img.png';
   static const hamkor = 'assets/images/hamkor.png';
-
 
   // LOTTIE
   static const locationLoading = 'assets/loties/location_loading.json';

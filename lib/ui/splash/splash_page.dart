@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ishbor/utils/app_colors.dart';
+import 'package:ishbor/utils/app_image.dart';
 import 'package:ishbor/utils/app_text_styles.dart';
 import 'package:ishbor/utils/constans.dart';
 
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(
       const Duration(seconds: 3),
-      () => Navigator.pushReplacementNamed(context, tabBox),
+      () => Navigator.pushReplacementNamed(context, onBoarding),
     );
   }
 
@@ -33,20 +34,30 @@ class _SplashScreenState extends State<SplashScreen> {
           statusBarIconBrightness: Brightness.dark,
           statusBarBrightness: Brightness.light,
         ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+        child: Container(
+          width: myWidth(context),
+          height: myHeight(context),
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            colors: [
+              Color(0XFFE3BEE8),
+              Color(0XFFE3BEE8),
+              Color(0XFFFFFFFF),
+              Color(0XFFFFFFFF),
+              Color(0XFFCED7ED),
+              Color(0XFFCED7ED),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          )),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                "Logo",
-                textAlign: TextAlign.center,
-                style: GoogleFonts.aBeeZee()
-              ),
-              Text(
-                "ishbor.uz",
-                textAlign: TextAlign.center,
-                style: GoogleFonts.aBeeZee()
-              ),
+              const SizedBox(),
+              const SizedBox(),
+              const SizedBox(),
+              Image.asset(AppImages.appLogo),
+              const SizedBox(),
             ],
           ),
         ),

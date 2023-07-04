@@ -7,14 +7,16 @@ import 'package:ishbor/utils/app_image.dart';
 class MyUtils {
   static const List<Tab> tabs = [
     Tab(
-      child: Text(
-        'AKK GA KIRISH',
-        style: TextStyle(color: Colors.purpleAccent),
-      ),
+      child: Text('Kirish',
+      style: TextStyle(
+        color: Colors.purpleAccent
+      ),),
     ),
-    Tab(
-      text: 'REGISTRATSIYA ',
-    ),
+    Tab(text: "Ro'yxatdan o'tish"),
+  ];
+  static  List<Widget> views = [
+    const LoginScreen(),
+    const SignUpScreen()
   ];
   static List<Widget> views = [const LoginScreen(), const SignUpScreen()];
 
