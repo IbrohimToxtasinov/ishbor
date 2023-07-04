@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ishbor/ui/auth/widgets/phone_input_component.dart';
 import 'package:ishbor/ui/widgets/global_button.dart';
 
-import '../../../utils/app_image.dart';
 import '../../../utils/my_utils.dart';
 import '../widgets/auth_textfield.dart';
 
