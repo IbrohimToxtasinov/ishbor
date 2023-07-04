@@ -4,10 +4,15 @@ import 'package:ishbor/utils/app_colors.dart';
 import 'package:ishbor/utils/constans.dart';
 
 class SliderWidget extends StatelessWidget {
-  const SliderWidget({Key? key, required this.title, required this.image})
-      : super(key: key);
+  const SliderWidget({
+    Key? key,
+    required this.title,
+    required this.image,
+    required this.subTitle,
+  }) : super(key: key);
 
   final String title;
+  final String subTitle;
   final String image;
 
   @override
@@ -36,7 +41,7 @@ class SliderWidget extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 50.w).w,
           child: Text(
-            "BIZ BILAN BIRGA OZ ISHINGIZNI VA ISHCHINGIZNI TOPING!",
+            subTitle,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 13.sp,

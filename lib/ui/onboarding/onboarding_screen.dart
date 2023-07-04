@@ -31,22 +31,28 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     final List<Widget> pages = [
       const SliderWidget(
         title: "ISH SERVISLARI",
+        subTitle: "BIZ BILAN BIRGA OZ ISHINGIZNI VA ISHCHINGIZNI TOPING!",
         image: AppImages.onBoarding1,
       ),
       const SliderWidget(
         title: "IMKONIYATI CHEKLANGANLAR",
+        subTitle:
+            "MAXSUS IMTIYOZLAR VA MOS ISH ORINLARINI TOPISHIUNGIZ MUMKUN!",
         image: AppImages.onBoarding2,
       ),
       const SliderWidget(
         title: "VAKANSIYA",
+        subTitle: "O'ZINGIZ UCHUN YAXSHI ISH O'RNINI TOPING!",
         image: AppImages.onBoarding3,
       ),
       const SliderWidget(
         title: "AI YORDAMCHI",
+        subTitle: "OZINGIZNING SAVOLLARINGIZGA JAVOB TOPING!",
         image: AppImages.onBoarding4,
       ),
       const SliderWidget(
         title: "CHAT",
+        subTitle: "ISH TOGRISADAGI MUAMOLARGA YECHIM TOPING!",
         image: AppImages.onBoarding5,
       ),
     ];
@@ -142,13 +148,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           ? Text(
                               button = "Get Stardred",
                               style: const TextStyle(
-                                  color: Colors.white, fontSize: 20),
+                                  color: Color(0XFF4F4E4E), fontSize: 20),
                             )
-                          : const Icon(
-                              Icons.navigate_next,
-                              size: 50,
-                              color: Colors.white,
-                            ),
+                          : const Icon(Icons.navigate_next,
+                              size: 50, color: Color(0XFF4F4E4E)),
                     ),
                   ),
                   SizedBox(height: 23.h),

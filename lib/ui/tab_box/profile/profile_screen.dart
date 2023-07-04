@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
                             0.0,
                             6.0,
                           ),
-                        )
+                        ),
                       ],
                       color: MyColors.white,
                     ),
@@ -69,8 +69,8 @@ class ProfileScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.0),
                             border: Border(
-                              bottom: BorderSide(
-                                  color: Colors.grey, width: 0.8.w),
+                              bottom:
+                                  BorderSide(color: Colors.grey, width: 0.8.w),
                             ),
                           ),
                           child: TabBar(
@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         SizedBox(
                           height: MediaQuery.of(context).size.height / 1.66,
-                          child:  TabBarView(children: MyUtils.views),
+                          child: TabBarView(children: MyUtils.views),
                         ),
                       ],
                     ),

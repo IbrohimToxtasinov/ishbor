@@ -79,6 +79,7 @@ class _PhoneInputComponentState extends State<PhoneInputComponent> {
         fontWeight: FontWeight.w500,
       ),
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.only(left: 20.w, right: 20.w).w,
         floatingLabelBehavior: FloatingLabelBehavior.never,
         hintText: "Telefon raqam",
         labelStyle: GoogleFonts.openSans(

@@ -16,7 +16,7 @@ class MyUtils {
   ];
   static  List<Widget> views = [
     const LoginScreen(),
-    const SignUpScreen()
+    const SignUpScreen(),
   ];
 
   static String getPhoneNumber(String number) {

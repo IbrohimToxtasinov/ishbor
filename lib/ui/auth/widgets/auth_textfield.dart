@@ -43,6 +43,7 @@ class AuthTexFormFiledWidget extends StatelessWidget {
           fontWeight: FontWeight.w600,
           fontSize: 14.sp,
         ),
+        contentPadding: EdgeInsets.only(left: 20.w, right: 20.w).w,
         errorStyle: GoogleFonts.openSans(
           color: MyColors.warning500,
           fontWeight: FontWeight.w500,
