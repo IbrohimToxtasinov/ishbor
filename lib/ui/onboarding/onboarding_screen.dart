@@ -146,7 +146,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       ),
                       child: (_currentPage == (pages.length - 1))
                           ? Text(
-                              button = "Get Stardred",
+                              button = "Kirish",
                               style: const TextStyle(
                                   color: Color(0XFF4F4E4E), fontSize: 20),
                             )

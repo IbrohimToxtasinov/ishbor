@@ -10,6 +10,8 @@ const String noInternetRoute = '/no_internet_route';
 const String onePage = '/one_page';
 const String detailByOne = '/detail_by_one';
 
+bool isAuth = false;
+
 myHeight(context) => MediaQuery.of(context).size.height;
 
 myWidth(context) => MediaQuery.of(context).size.width;
