@@ -16,6 +16,8 @@ class AppImages {
   static const chat = 'assets/svg/chat.svg';
   static const profile = 'assets/svg/profile_1.svg';
   static const appBar = 'assets/svg/appbar.svg';
+  static const gpt = 'assets/svg/gptS.svg';
+  static const marketPlace = 'assets/svg/market_place.svg';
 
   // PNG
   static const noInternet = 'assets/images/no_internet.png';
@@ -29,6 +31,11 @@ class AppImages {
   static const img2 = 'assets/images/img_2.png';
   static const im = 'assets/images/img.png';
   static const hamkor = 'assets/images/hamkor.png';
+  static const gptB = 'assets/images/gpt.png';
+  static const gptPng = 'assets/images/gptPng.png';
+  static const market = 'assets/images/market.png';
+  static const mB = 'assets/images/mB.png';
+  static const ISH = 'assets/images/img_3.png';
 
   // LOTTIE
   static const locationLoading = 'assets/loties/location_loading.json';
