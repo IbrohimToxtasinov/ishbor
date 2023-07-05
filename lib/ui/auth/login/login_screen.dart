@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ishbor/cubit/get_select_address/get_select_address_cubit.dart';
+import 'package:ishbor/data/shared_pref/storage.dart';
 import 'package:ishbor/ui/auth/widgets/phone_input_component.dart';
 import 'package:ishbor/ui/widgets/global_button.dart';
 import 'package:ishbor/utils/constans.dart';
@@ -64,11 +67,12 @@ class _LoginScreenState extends State<LoginScreen> {
             width: 140.w,
             child: GlobalButton(
               title: 'Kirish',
-              onTap: () {
+              onTap: () async {
                 if (formGlobalKey.currentState!.validate()) {
                   formGlobalKey.currentState!.save();
-                  isAuth != isAuth;
-                  setState(() {});
+                  await StorageRepository.putBool('isAuth', true);
+                  BlocProvider.of<GetSelectAddressCubit>(context)
+                      .fetchSelectAddress();
                 }
               },
               colorText: Colors.white,

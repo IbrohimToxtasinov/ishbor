@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ishbor/cubit/get_select_address/get_select_address_cubit.dart';
 import 'package:ishbor/cubit/tab/tab_cubit.dart';
 import '../cubit/connectivity/connectivity_cubit.dart';
 import '../ui/router.dart';
@@ -14,6 +15,7 @@ class App extends StatelessWidget {
     return MultiBlocProvider(providers: [
       BlocProvider(create: (context) => ConnectivityCubit()),
       BlocProvider(create: (context) => TabCubit()),
+      BlocProvider(create: (context) => GetSelectAddressCubit()),
     ], child: MyApp());
   }
 }
