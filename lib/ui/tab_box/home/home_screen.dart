@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ishbor/ui/tab_box/home/widget/f.dart';
+import 'package:ishbor/ui/tab_box/home/widget/th.dart';
+import 'package:ishbor/ui/tab_box/home/widget/two/two.dart';
 import 'package:ishbor/utils/app_image.dart';
+import 'package:ishbor/utils/constans.dart';
 import 'package:ishbor/utils/my_utils.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
@@ -57,7 +61,20 @@ class HomeScreen extends StatelessWidget {
                                 child: Image.asset(FakeData.data[index].image),
                               ),
                             ),
-                            onTap: () {},
+                            onTap: () {
+                              if(index==0){
+                                Navigator.pushNamed(context, onePage);
+                              }
+                              if(index==3){
+                                Navigator.push(context, MaterialPageRoute(builder: (_)=>TwoScreen()));
+                              }
+                              if(index==1){
+                                Navigator.push(context, MaterialPageRoute(builder: (_)=>ThScreen()));
+                              }
+                              if(index==2){
+                                Navigator.push(context, MaterialPageRoute(builder: (_)=>FScreen()));
+                              }
+                            },
                           ),
                           SizedBox(height: 8.h),
                           Text(
