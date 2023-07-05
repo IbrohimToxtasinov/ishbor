@@ -7,6 +7,8 @@ const String login = '/log_in_page';
 const String signUp = '/sign_up_page';
 const String forgotPassword = '/forgot_password_page';
 const String noInternetRoute = '/no_internet_route';
+const String onePage = '/one_page';
+const String detailByOne = '/detail_by_one';
 
 myHeight(context) => MediaQuery.of(context).size.height;
 

@@ -1,18 +1,15 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ishbor/cubit/connectivity/connectivity_cubit.dart';
 import 'package:ishbor/cubit/tab/tab_cubit.dart';
-import 'package:ishbor/ui/tab_box/cart/cart_screen.dart';
-import 'package:ishbor/ui/tab_box/category/category_screen.dart';
-import 'package:ishbor/ui/tab_box/favorite/favorite_screen.dart';
+import 'package:ishbor/ui/tab_box/gpt/gpt_screen.dart';
 import 'package:ishbor/ui/tab_box/home/home_screen.dart';
+import 'package:ishbor/ui/tab_box/m/m_screen.dart';
 import 'package:ishbor/ui/tab_box/profile/profile_screen.dart';
-import 'package:ishbor/utils/app_colors.dart';
-import 'package:ishbor/utils/app_text_styles.dart';
 import 'package:ishbor/utils/constans.dart';
 
+import 'chat/chat_screen.dart';
 import 'widgets/bottom_navigation_bar_item.dart';
 
 class TabBox extends StatefulWidget {
@@ -29,6 +26,8 @@ class _TabBoxState extends State<TabBox> {
   void initState() {
     screens = [
       HomeScreen(),
+      GptScreen(),
+      MScreen(),
       CategoryScreen(),
       ProfileScreen(),
     ];
@@ -63,9 +62,11 @@ class _TabBoxState extends State<TabBox> {
                   context.read<TabCubit>().changeTabState(value);
                 },
                 items: [
-                  bottomNavigationBarItemWidget(icon: "home_icon"),
-                  bottomNavigationBarItemWidget(icon: "chat"),
-                  bottomNavigationBarItemWidget(icon: "profile_1"),
+                  bottomNavigationBarItemWidget(icon: "home_icon", isSvg: true),
+                  bottomNavigationBarItemWidget(icon: "gptPng", isSvg: false),
+                  bottomNavigationBarItemWidget(icon: "marketP", isSvg: false),
+                  bottomNavigationBarItemWidget(icon: "chat", isSvg: true),
+                  bottomNavigationBarItemWidget(icon: "profile_1", isSvg: true),
                 ],
               ),
             );
