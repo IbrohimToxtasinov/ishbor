@@ -51,13 +51,13 @@ class _SplashScreenState extends State<SplashScreen> {
             end: Alignment.bottomRight,
           )),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(),
-              const SizedBox(),
-              const SizedBox(),
-              Image.asset(AppImages.appLogo),
-              const SizedBox(),
+              Image.asset(
+                AppImages.appLogo,
+                width: myWidth(context) * 350 / 375,
+                height: myHeight(context) * 350 / 812,
+              ),
             ],
           ),
         ),

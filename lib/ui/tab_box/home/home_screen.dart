@@ -21,11 +21,11 @@ class HomeScreen extends StatelessWidget {
                 padding: EdgeInsets.only(left: 32.r, right: 32.r, top: 32.r),
                 child: SizedBox(
                   width: double.infinity,
-                  height: 320.h,
+                  height: 330.h,
                   child: GridView.builder(
                     gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                       maxCrossAxisExtent: 180,
-                      childAspectRatio: 0.76.h / 1,
+                      childAspectRatio: 0.6.h,
                       crossAxisSpacing: 114,
                       mainAxisSpacing: 20,
                     ),

@@ -8,6 +8,8 @@ const String signUp = '/sign_up_page';
 const String forgotPassword = '/forgot_password_page';
 const String noInternetRoute = '/no_internet_route';
 
+bool isAuth = false;
+
 myHeight(context) => MediaQuery.of(context).size.height;
 
 myWidth(context) => MediaQuery.of(context).size.width;

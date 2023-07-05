@@ -6,7 +6,7 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20),
         child: ListView(
@@ -16,17 +16,13 @@ class CategoryScreen extends StatelessWidget {
                 ChatBubbleClipper1(type: BubbleType.sendBubble), context),
             getReceiverView(
                 ChatBubbleClipper1(type: BubbleType.receiverBubble), context),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             getTitleText(""),
             getSenderView(
                 ChatBubbleClipper2(type: BubbleType.sendBubble), context),
             getReceiverView(
                 ChatBubbleClipper2(type: BubbleType.receiverBubble), context),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             getTitleText(""),
             getSenderView(
                 ChatBubbleClipper3(type: BubbleType.sendBubble), context),
@@ -81,7 +77,7 @@ class CategoryScreen extends StatelessWidget {
             getReceiverView(
                 ChatBubbleClipper9(type: BubbleType.receiverBubble), context),
             const SizedBox(
-              height:10,
+              height: 10,
             ),
             getTitleText(""),
             getSenderView(
@@ -89,14 +85,14 @@ class CategoryScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: getReceiverView(
-                  ChatBubbleClipper10(type: BubbleType.receiverBubble), context),
+                  ChatBubbleClipper10(type: BubbleType.receiverBubble),
+                  context),
             )
           ],
         ),
       ),
     );
   }
-
 
   getTitleText(String title) => Text(
         title,
